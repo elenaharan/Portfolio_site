@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="../img/favicon_logo_EH.jpg" sizes="32x32" alt="" />
-    <title>Elena Haran - Portfolio Site</title>
+  <meta charset="utf-8">
+  <title>Elena Haran - Portfolio Site</title>
+  <link rel="icon" type="image/png" href="../img/favicon_logo_EH.jpg" sizes="32x32" alt="" />
+  <link rel="stylesheet" type="text/css" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="../img/LOGO_2.jpg" width="200px" height="70px" alt="Logo containing Elena Haran's full name">
-        <nav>
-            <ul role="menubar">
-            <li role="presentation">
-                <a href="index.html" role="menuitem">Home</a>
-            </li>
-            <li role="presentation">
-                <a href="about.html" role="menuitem">About</a>
-            </li>        
-            <li role="presentation">
-                <a href="contact.html" role="menuitem">Contact</a>
-            </li>
-            </ul>
-        </nav>
+  <header class="page-header">
+    <!--Logo lives here-->
+    <img src="../img/LOGO_2.jpg" width="200px" height="70px" 
+    alt="Logo containing Elena Haran's full name" class="page-header__item--logo page-header__item">
+    <!--Navigation menu is here-->
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+        </li>        
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item 
+          navigation-list__item--active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-content">
     <h1>Contact</h1>
     <div>
-        Ground floor flat<br>
+      <p>Ground floor flat<br>
         55 Percy Road<br>
         London, W12 9PX<br>
         United Kingdom<br>
@@ -31,27 +46,29 @@
         Skype <a href="skype:live:elenaharan">live:elenaharan</a><br>
         elenaharan@gmail.com<br>
         <a href="mailto:elenaharan@gmail.com">Contact me</a>
-    </div>
+      </p>
     <form action="" method="post">
-        <label class="standard-label" for="contact-email">E-mail: </label>
-        <input type="email" id="contact-email" required>
-      
-        <label class="standard-label" for="contact-tel">Telephone: </label>
-        <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
-      
-        <label class="standard-label" for="contact-message">Message: </label>
-        <textarea id="contact-message" maxlength="240" required></textarea>
-        <input type="submit" value="Send message">
-      </form>
-    <footer>
-        <p>Find me on</p>
-        <!--Github logo-->
-        <img src="../img/github_logo.svg" alt="github">
-        <!--linkedin logo-->
-        <img src="../img/linkedin_logo.svg" alt="linkedin">
-        <!--facebook logo-->
-        <img src="../img/facebook_logo.svg" alt="facebook">
-    </footer>
-    <script src="js/tota11y.min.js"></script>
+    <label class="standard-label" for="contact-email">E-mail: </label>
+      <input type="email" id="contact-email form__item" placeholder="Type your email here" required>
+    <label class="standard-label" for="contact-tel">Telephone: </label>
+      <input type="tel" id="contact-tel form__item" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Type your phone here" required>
+    <label class="standard-label" for="contact-message">Message: </label>
+      <textarea id="contact-message form__item" maxlength="240" placeholder="Type your message here" required></textarea>
+      <input type="submit" value="Send message">
+    </form>
+    </div>
+  </div>
+  <footer class="page-footer">
+    <p class="page-footer__text">Find me on</p>
+    <div class="social-media__icons">
+    <!--Github logo-->
+    <a href="https://github.com/ElenaLang25" target="_blank"><img src="../img/github_logo.svg" alt="github"></a>
+    <!--linkedin logo-->
+    <a href="https://www.linkedin.com/in/elena-haran-923b25192/" target="_blank"><img src="../img/linkedin_logo.svg" alt="linkedin"></a>
+    <!--facebook logo-->
+    <a href="https://www.facebook.com/elena.freeman.9" target="_blank"><img src="../img/facebook_logo.svg" alt="facebook"></a>
+    </div>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
 </body>
 </html>

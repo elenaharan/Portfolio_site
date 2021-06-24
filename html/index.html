@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="../img/favicon_logo_EH.jpg" sizes="32x32" alt="" />
-    <title>Elena Haran - Portfolio Site</title>
+  <meta charset="utf-8">
+  <title>Elena Haran - Portfolio Site</title>
+  <link rel="icon" type="image/png" href="../img/favicon_logo_EH.jpg" sizes="32x32" alt="" />
+  <link rel="stylesheet" type="text/css" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="../img/LOGO_2.jpg" width="200px" height="70px" alt="Logo containing Elena Haran's full name">
-    <nav>
-        <ul role="menubar">
+  <header class="page-header">
+    <!--Add logo here-->
+    <img src="../img/LOGO_2.jpg" width="200px" height="70px" 
+    alt="Logo containing Elena Haran's full name" class="page-header__item--logo page-header__item">
+    <!--Navigation menu here-->
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
         <li role="presentation">
-            <a href="index.html" role="menuitem">Home</a>
+          <a href="index.html" role="menuitem" class="navigation-list__item 
+          navigation-list__item--active">Home</a>
         </li>
         <li role="presentation">
-            <a href="about.html" role="menuitem">About</a>
-        </li>        
+          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+        </li>   
         <li role="presentation">
-            <a href="contact.html" role="menuitem">Contact</a>
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>     
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
         </li>
-        </ul>
+      </ul>      
     </nav>
-    </header>
-    Hello World
-    <footer>
-        <p>Find me on</p>
-        <!--Github logo-->
-        <img src="../img/github_logo.svg" alt="github">
-        <!--linkedin logo-->
-        <img src="../img/linkedin_logo.svg" alt="linkedin">
-        <!--facebook logo-->
-        <img src="../img/facebook_logo.svg" alt="facebook">
-    </footer>
+  </header>
+  <div class="profile">
+    <img src="../img/profile__portrait.jpg" class="profile__portrait" alt="Elena Haran Portrait">
+    <h1>Hello World!</h1>
+    <p>
+          My name is Elena Haran. I am a web developer from London.
+    </p>
+    <a href="#">Check out some of my code</a><br>
+    <button type="button">Default Button</button>
+    <button class="button-secondary">Secondary Button</button>  
+  </div>
+  <footer class="page-footer">
+    <p class="page-footer__text">Find me on</p>
+    <div class="social-media__icons">
+      <!--Github logo-->
+      <a href="https://github.com/ElenaLang25" target="_blank"><img src="../img/github_logo.svg" alt="github"></a>
+      <!--linkedin logo-->
+      <a href="https://www.linkedin.com/in/elena-haran-923b25192/" target="_blank"><img src="../img/linkedin_logo.svg" alt="linkedin"></a>
+      <!--facebook logo-->
+      <a href="https://www.facebook.com/elena.freeman.9" target="_blank"><img src="../img/facebook_logo.svg" alt="facebook"></a>
+    </div>
+  </footer>
     <script src="js/tota11y.min.js"></script>
 </body>
 </html>
