@@ -203,39 +203,7 @@ input {
         font-size: 22px;
     }
 }
-@keyframes color-change {
-    0% {
-        fill: var(--keyframes-start);
-      }
-      50% {
-        fill: var(--keyframes-middle);
-      }
-      100% {
-        fill: var(--keyframes-end);
-      }
-}
-.sun {
-    animation: 4s color-change infinite alternate linear; 
-}
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-    to {
-        transform: translate(200px, 50px);
-    }
-}
-.cloud-back {
-    animation: 30s cloud-move infinite alternate linear;
-}
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate (446px, 48px);
-    } 
-    to {
-        transform: translate(100px, 48px);
-    }
-}
-.cloud-back {
-    animation: 34 cloud-move-reverse infinite alternate linear;
-}
+
+
+
+
