@@ -298,3 +298,15 @@ input {
     font-size: 22px;
   }
 }
+@keyframes taxi-move {
+    from {
+        transform: translate(1500px, 0);
+    }
+    to {
+        transform: translate(-2400px, 0);
+    }
+}
+
+.taxi {
+    animation: 20s taxi-move infinite linear;
+}
