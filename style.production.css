@@ -307,6 +307,6 @@ input {
     }
 }
 
-.taxi {
+#taxi {
     animation: 20s taxi-move infinite linear;
 }
