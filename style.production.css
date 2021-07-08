@@ -53,23 +53,7 @@ h3 {
   padding: 0 100px;
 }
 
-table,
-th,
-td {
-  border: 1px solid black;
-  margin: 25px auto;
-  width: 75%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
 
-thead {
-  background-color: lightblue;
-}
-
-tbody {
-  background-color: lightgrey;
-}
 
 a {
   color: #357b70;
