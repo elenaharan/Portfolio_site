@@ -99,7 +99,7 @@ button {
   display: inline-block;
   font-family: inherit;
   background-color: #68829e;
-  color: #357b70;
+  color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -114,7 +114,7 @@ button {
   display: inline-block;
   font-family: inherit;
   background-color: #68829e;
-  color: #357b70;
+  color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
