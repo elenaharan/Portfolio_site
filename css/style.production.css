@@ -406,7 +406,7 @@ input {
   padding-right: 0px;
 }
 
-card {
+/*card {
   border-width: solid 0.1px;
   border-style: double;
   border-color: royalblue;
@@ -416,7 +416,7 @@ card {
   margin-right: 50px;
   justify-items: center;
   align-items: center;
-}
+}*/
 
 .row {
   display: flex;
