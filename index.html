@@ -3,31 +3,28 @@
 <head>
   <meta charset="utf-8">
   <title>Elena Haran - Portfolio Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
   <link rel="icon" type="image/png" href="img/favicon_logo_EH.jpg" sizes="32x32"/>
   <link rel="stylesheet" type="text/css" 
   href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header class="page-header">
-    <!--Add logo here-->
-    <img src="img/LOGO_2.jpg" 
-    alt="Logo containing Elena Haran's full name" class="page-header__item--logo page-header__item">
     <!--Navigation menu here-->
-    <nav class="main-navigation page-header__item">
+    <nav class="navbar page-header navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+    <!--<nav class="main-navigation page-header__item">-->
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
           <a href="index.html" role="menuitem" class="navigation-list__item 
-          navigation-list__item--active">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="html/about_Elena_Haran.html" role="menuitem" class="navigation-list__item">About</a>
+          navigation-list__item--active">About</a>
         </li>   
         <li role="presentation">
-          <a href="html/work.html" role="menuitem" class="navigation-list__item">Work</a>
+          <a href="html/work.html" role="menuitem" class="navigation-list__item">Projects</a>
         </li>     
         <li role="presentation">
           <a href="html/contact_Elena_Haran.html" role="menuitem" class="navigation-list__item">Contact</a>
@@ -35,24 +32,53 @@
       </ul>      
     </nav>
   </header>
-  <div class="profile">
-    <img src="img/profile_portrait.jpg" class="profile__portrait" alt="Elena Haran Portrait">
-    <h1>Hello World!</h1>
-    <p>
-          My name is Elena Haran, and I am a web developer from London.
-    </p><br>  
-  </div>
-  <footer class="page-footer">
-    <p class="page-footer__text">Find me on</p>
-    <div class="social-media__icons">
-      <!--Github logo-->
-      <a href="https://github.com/elenaharan" target="_blank"><img src="img/github_logo.svg" alt="github"></a>
-      <!--linkedin logo-->
-      <a href="https://www.linkedin.com/in/elena-haran-923b25192/" target="_blank"><img src="img/linkedin_logo.svg" alt="linkedin"></a>
-      <!--facebook logo-->
-      <a href="https://www.facebook.com/elena.freeman.9" target="_blank"><img src="img/facebook_logo.svg" alt="facebook"></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="main-content__title">About</h2>
+      </div>
     </div>
-  </footer>
+    <div class="row">
+      <div class="col-6">
+        <img src="img/profile_portrait.jpg" class="profile__portrait" alt="Elena Haran Portrait">
+      </div>
+      <div class="col-6">
+        <article class="main-content__article">
+          Hi! My name is Elena Haran, and I am a web developer from London. I am currently enrolled in a Full-Stack Web Development 
+          program at CareerFoundry, one of the most highly rated online course-providers. 
+          My goal is to become a skilful web developer and to work in the field of education. 
+          Over twenty years, I have taught English as a foreign language to children and adults, 
+          and I worked in a variety of educational settings including public schools, universities, 
+          colleges, and language centres. Apart from being an educator, I am first and foremost a 
+          trained linguist. I have a master’s degree in linguistics, and I speak several foreign 
+          languages. My dream is to be able to create an online platform that would help people 
+          learn foreign languages in the most efficient way and to meet other language-lovers like me.  
+          My hobbies include long-distance running, travelling and football. <br>
+          <a href="./Elena_Haran_CV.pdf" class="button" target="_blank" download>Download my CV</a>
+          </article>
+      </div>  
+    </div> 
+    
+  
+    
+  </div>
+  
     <script src="tota11y.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+<footer class="page-footer font-small blue pt-4">
+  <p class="page-footer__text">Find me on</p>
+  <div class="social-media__icons">
+    <!--Github logo-->
+    <a href="https://github.com/elenaharan" target="_blank"><img src="img/github_logo.svg" alt="github"></a>
+    <!--linkedin logo-->
+    <a href="https://www.linkedin.com/in/elena-haran-923b25192/" target="_blank"><img src="img/linkedin_logo.svg" alt="linkedin"></a>
+    <!--facebook logo-->
+    <a href="https://www.facebook.com/elena.freeman.9" target="_blank"><img src="img/facebook_logo.svg" alt="facebook"></a>
+</footer>
 </html>
