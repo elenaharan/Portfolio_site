@@ -60,7 +60,7 @@ h2 {
   -ms-flex-pack: center;
   justify-content: center;
   align-content: center;
-  padding-bottom: 100px;
+  padding-bottom: -15px;
   margin-left: -80px;
   line-height: 200%;
 }
@@ -256,4 +256,8 @@ input {
 .row {
   display: flex;
   margin: 0 auto;
+}
+
+.social-media__icons {
+  margin-top: -18px;
 }
