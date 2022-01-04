@@ -5,18 +5,18 @@
   <title>Elena Haran - Portfolio Site</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
-  <link rel="icon" type="image/png" href="img/favicon_logo_EH.jpg" sizes="32x32"/>
   <link rel="stylesheet" type="text/css" 
   href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.production.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header class="page-header">
     <!--Navigation menu here-->
-    <nav class="navbar page-header navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+    <nav class="navbar page-header navbar-expand-lg sticky-top" style="background-color: #e3f2fd; position: sticky;
+    z-index: 999; margin-top: 0;">
     <!--<nav class="main-navigation page-header__item">-->
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
@@ -37,7 +37,7 @@
       <div class="col-12">
         <h2 class="main-content__title">About</h2>
       </div>
-    </div>
+      </div>
     <div class="row">
       <div class="col-6">
         <img src="img/profile_portrait.jpg" class="profile__portrait" alt="Elena Haran Portrait">
@@ -58,10 +58,20 @@
           </article>
       </div>  
     </div> 
+  </div>
+
     
   
-    
-  </div>
+  <footer class="page-footer font-small blue pt-4">
+    <p class="page-footer__text">Find me on</p>
+    <div class="social-media__icons">
+      <!--Github logo-->
+      <a href="https://github.com/elenaharan" target="_blank"><img src="img/github_logo.svg" alt="github"></a>
+      <!--linkedin logo-->
+      <a href="https://www.linkedin.com/in/elena-haran-923b25192/" target="_blank"><img src="img/linkedin_logo.svg" alt="linkedin"></a>
+      <!--facebook logo-->
+      <a href="https://www.facebook.com/elena.freeman.9" target="_blank"><img src="img/facebook_logo.svg" alt="facebook"></a>
+  </footer>
   
     <script src="tota11y.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
@@ -71,14 +81,4 @@ integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-<footer class="page-footer font-small blue pt-4">
-  <p class="page-footer__text">Find me on</p>
-  <div class="social-media__icons">
-    <!--Github logo-->
-    <a href="https://github.com/elenaharan" target="_blank"><img src="img/github_logo.svg" alt="github"></a>
-    <!--linkedin logo-->
-    <a href="https://www.linkedin.com/in/elena-haran-923b25192/" target="_blank"><img src="img/linkedin_logo.svg" alt="linkedin"></a>
-    <!--facebook logo-->
-    <a href="https://www.facebook.com/elena.freeman.9" target="_blank"><img src="img/facebook_logo.svg" alt="facebook"></a>
-</footer>
 </html>

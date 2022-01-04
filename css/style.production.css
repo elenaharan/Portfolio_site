@@ -11,7 +11,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
-  padding-top: 100px;
+  padding-top: 0px;
+}
+
+.container {
+  margin-top: 30px;
 }
 
 
@@ -21,9 +25,12 @@ h2 {
   justify-self: center;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 300;
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .main-content {
@@ -58,23 +65,6 @@ h3 {
   line-height: 200%;
 }
 
-table,
-th,
-td {
-  border: 1px solid black;
-  margin: 25px auto;
-  width: 75%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-
-thead {
-  background-color: lightblue;
-}
-
-tbody {
-  background-color: lightgrey;
-}
 
 a {
   color: #357b70;
@@ -157,7 +147,7 @@ button:focus,
   align-items: center;
   background-color: lightslategrey;
   padding: 10px;
-  margin-top: -50px;
+  margin-top: 50px;
   opacity: 0.9;
   
   
@@ -176,24 +166,15 @@ button:focus,
 }
 
 .page-header {
-  display: -webkit-box;
+  display: -webkit-box-sizing;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 10px;
   justify-content: end;
-  }
-
-
-
-
-
-.page-header__item:last-child {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  text-align: right;
 }
+
+
 
 .navigation-list li {
   display: inline-block;
@@ -205,37 +186,12 @@ button:focus,
   transition: 0.2s opacity;
   font-size: 22px;
   font-weight: 100;
+  
 }
 
 
 .navigation-list__item--active {
   text-decoration: underline;
-}
-
-
-/* start grid fallback */
-.grid__item {
-  display: inline-block;
-  width: 33%;
-}
-
-/* end grid fallback */
-@supports (display: grid) {
-  .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-  }
-}
-
-.grid__item {
-  background-color: lightgrey;
-  padding: 15px;
-  width: auto;
-  min-height: auto;
-  margin: 0;
 }
 
 form {
@@ -267,140 +223,19 @@ input {
   flex-wrap: wrap;
 }
 
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .grip {
-    grid-gap: 10px;
-  }
-
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
   h1 {
     font-size: 22px;
   }
-}
-
-@-webkit-keyframes color-change {
-  0% {
-    fill: #edc655;
+  .page-header__item:last-child {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: right;
   }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-back {
-  -webkit-animation: 30s cloud-move infinite alternate linear;
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate (446px, 48px);
-    transform: translate (446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate (446px, 48px);
-    transform: translate (446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  -webkit-animation: 34 cloud-move-reverse infinite alternate linear;
-  animation: 34 cloud-move-reverse infinite alternate linear;
-}
-
-@keyframes taxi-move {
-  from {
-    transform: translate(1500px, 0);
-  }
-
-  to {
-    transform: translate(-2400px, 0);
-  }
-}
-
 
 .page-header {
   width: 100%;
-  height: auto;
+  
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;

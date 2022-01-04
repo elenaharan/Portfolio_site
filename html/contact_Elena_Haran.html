@@ -5,7 +5,6 @@
   <title>Elena Haran - Portfolio Site</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="icon" type="image/png" href="../img/favicon_logo_EH.jpg" sizes="32x32"/>
   <link rel="stylesheet" type="text/css" 
   href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,7 +15,8 @@
 <body>
   <header class="page-header">
     <!--Navigation menu is here-->
-    <nav class="navbar page-header navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+    <nav class="navbar page-header navbar-expand-lg sticky-top" style="background-color: #e3f2fd; position: sticky;
+    z-index: 999; margin-top: 0;">
     <!--<nav class="main-navigation page-header__item">-->
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
@@ -69,4 +69,5 @@
   </footer>
   <script src="tota11y.min.js"></script>
 </body>
+
 </html>
