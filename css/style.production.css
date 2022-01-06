@@ -83,6 +83,8 @@ p {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  margin-top: -20px;
+  margin-bottom: 0px;
 }
 
 .main-content__title {
@@ -215,12 +217,16 @@ button:focus,
   -ms-flex-align: center;
   align-items: center;
   opacity: 0.9;
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .page-footer__text {
   margin-bottom: 5px;
+}
+
+.footer-contact {
+  margin-top: -10px;
 }
 
 * {
@@ -400,6 +406,7 @@ li {
   margin: 0 auto;
   justify-self: center;
   font-size: 18px;
+  margin-top: -20px;
 }
 
 form {
@@ -409,7 +416,7 @@ form {
   margin-right: auto;
   line-height: 1.5;
   color: #223c50;
-  margin-top: 5px;
+  margin-top: -5px;
 }
 
 .project-list {
