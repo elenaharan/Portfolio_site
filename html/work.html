@@ -21,113 +21,154 @@
   <!--<nav class="main-navigation page-header__item">-->
     <ul role="menubar" class="navigation-list">
       <li role="presentation">
-        <a href="../index.html" role="menuitem" class="navigation-list__item">About</a>
+        <a class="navigation-list__item" style="font-size: 22px;" href="../index.html" role="menuitem">About</a>
       </li>        
       <li role="presentation">
-        <a href="work.html" role="menuitem" class="navigation-list__item 
-        navigation-list__item--active">Projects</a>
+        <a class="navigation-list__item 
+        navigation-list__item--active" style="font-size: 22px;" href="work.html" role="menuitem">Projects</a>
       </li>
       <li role="presentation">
-        <a href="contact_Elena_Haran.html" role="menuitem" class="navigation-list__item">Contact</a>
+        <a class="navigation-list__item" style="font-size: 22px;" href="contact_Elena_Haran.html" role="menuitem" >Contact</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<!--Main content-->
-<div class="container">  
-  <!--flex items-->
-  <div class="row">
-    <div class="col-12">
-      <h2 class="main-content__title">My Projects</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="../img/myFlixAngularProjectPicture.png" 
-        alt="myFlix Angular project image" />
-        <div class="card-body">
-          <h5 class="card-title">myFlix (Angular)</h5>
-          <p class="card-text" style="padding-top: 5px;">This is a single-page, responsive movie app built with Angular, with routing and several interface views.</p>
-          <a href="https://elenaharan.github.io/myFlix-Angular-client/welcome" target="_blank">View this project online</a> <br>
-          <a href="https://github.com/elenaharan/myFlix-Angular-client" target="_blank">View this project on GitHub</a>
-        </div>
-      </div>
-    </div>
+<main>
+  <section>
+    <h2 class="main-content__title">My Projects</h2>
+    <p>While working on these projects, I used Agile project management techniques including user stories, user flow, story points, 
+      and a kanban board.
+    </p>
+    
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="../img/pokedexProjectPicture.png" 
-        alt="Pokedex project image" />
-        <div class="card-body">
-          <h5 class="card-title">Pokédex</h5>
-          <p class="card-text" style="padding-top: 5px;">This is a small web application with HTML, 
-            CSS and JavaScript that loads data from an external API and enables the viewing of data points in detail.</p>
-          <a href="https://elenaharan.github.io/Pokedex/" target="_blank">View this project online</a> <br>
-          <a href="https://github.com/elenaharan/Pokedex" target="_blank">View this project on GitHub</a>
+    <div class="project-grid">  
+      <!--grid items-->
+      <div class="project-grid__item">
+        <h5>myFlix (Angular)</h5>
+        <div class="screenshot-container_pic1"><img class="screenshot" src="../img/myFlixAngularProjectPicture.png" 
+            alt="myFlix Angular project image">
         </div>
+        <p class="grid-item__p">This is a single-page, responsive movie app built with Angular, 
+          routing and several interface views. The app is accompanied by relevant documentation generated with TypeDoc.
+          <ul> <u>Technologies:</u>
+            <li>Angular (v13.0.3)</li>
+            <li>Angular Material</li>
+            <li>Node.js (v16.13.0) and npm (v8.1.0)</li>
+            <li>TypeScript</li>
+            <li>TypeDoc</li>
+            <li>CSS</li>
+          </ul>
+          </p>
+        <a  class="grid-items__link" href="https://elenaharan.github.io/myFlix-Angular-client/welcome" target="_blank">View this project online</a> <br>
+        <a class="grid-items__link" href="https://github.com/elenaharan/myFlix-Angular-client" target="_blank">View this project on GitHub</a>
       </div>
-    </div>   
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="../img/toDoListProjectImage.jpg" 
-        alt="To-do-list project image" />
-        <div class="card-body">
-          <h5 class="card-title">To-do-list App</h5>
-          <p class="card-text" style="padding-top: 5px;">This is a jQuery to-do-list application project where user can add, 
-            delete, cross out and change the order of items.</p>
-          <a href="https://elenaharan.github.io/Pokedex/" target="_blank">View this project online</a> <br>
-          <a href="https://github.com/elenaharan/Pokedex" target="_blank">View this project on GitHub</a>
+      <div class="project-grid__item">
+        <h5>myFlix (server-side)</h5>
+        <div class="screenshot-container_pic1"><img class="screenshot" src="../img/myFlixAPIProjectImage.png" 
+          alt="myFlix (server-side) project image">
         </div>
+        <p class="grid-item__p">This is a server-side component of myFlix movies web application. The application will 
+          provide users with access to information about different movies, directors, and genres.
+          <ul> <u>Technologies:</u>
+            <li>MongoDB</li>
+            <li>Express</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>REST API</li>
+            <li>Mongoose</li>
+            <li>Postman</li>
+          </ul>
+        </p>
+        <a class="grid-items__link" href="https://movietemple.herokuapp.com/" target="_blank">View this project online</a> <br>
+        <a class="grid-items__link" href="https://github.com/elenaharan/movie_api" target="_blank">View this project on GitHub</a>
       </div>
-    </div>   
-  
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="../img/myFlixAPIProjectImage.png" 
-        alt="To-do-list project image" />
-        <div class="card-body">
-          <h5 class="card-title">myFlix (server-side)</h5>
-          <p class="card-text" style="padding-top: 5px;">This is a server-side component of myFlix movies web application. The application will 
-            provide users with access to information about different movies, directors, and genres.</p>
-          <a href="https://movietemple.herokuapp.com/" target="_blank">View this project online</a> <br>
-          <a href="https://github.com/elenaharan/movie_api" target="_blank">View this project on GitHub</a>
-        </div>
-      </div>
-    </div>  
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="../img/meetAppProjectPicture.png" 
-        alt="To-do-list project image" />
-        <div class="card-body">
-          <h5 class="card-title">Meet App</h5>
-          <p class="card-text" style="padding-top: 5px;">This is a serverless, progressive web application (PWA) with React 
-            using test-driven development (TDD) technique. 
-            The application uses Google Calendar API to fetch upcoming events.</p>
-          <a href="https://elenaharan.github.io/meet/" target="_blank">View this project online</a> <br>
-          <a href="https://github.com/elenaharan/meet" target="_blank">View this project on GitHub</a>
+      <div class="project-grid__item">
+        <h5>myFlix (React)</h5>
+        <div class="screenshot-container_1pic">
+          <img class="screenshot" src="../img/myFlixReactProjectImage1.png" alt="myFlix(React) project image">
         </div>
+        <p class="grid-item__p">This is a single-page, responsive application with routing and 
+          several interface views, where movie enthusiasts can access information
+          about different movies, directors and genres.
+          <ul> <u>Technologies:</u>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>React Redux</li>
+            <li>MongoDB</li>
+            <li>Express</li>
+            <li>Node.js</li>
+            <li>Parcel</li>
+          </ul>
+        </p>
+        <a class="grid-items__link" href="https://movietemple.netlify.app/" target="_blank">View this project online</a> <br>
+        <a class="grid-items__link" href="https://github.com/elenaharan/myFlix-client" target="_blank">View this project on GitHub</a>
       </div>
-    </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="../img/chatScreen.PNG" 
-        alt="ChatMobileApp project image" />
-        <div class="card-body">
-          <h5 class="card-title">ChatMobileApp</h5>
-          <p class="card-text" style="padding-top: 5px;">This is a mobile chat app for mobile devices built with React Native. 
-            This app will provide users with a chat interface and options to share images and their location.</p>
-          <a href="https://github.com/elenaharan/chatMobileApp" target="_blank">View this project on GitHub</a>
+      <div class="project-grid__item">
+        <h5>ChatMobileApp</h5>
+        <div class="screenshot-container_2pics">
+          <img class="screenshot" src="../img/startScreen.PNG" alt="ChatMobileApp project image">
+          <img class="screenshot" src="../img/chatScreen.PNG" alt="ChatMobileApp project image">
         </div>
-      </div>
-    </div>
+        <p class="grid-item__p">This is a mobile chat app for mobile devices built with React Native. 
+          This app will provide users with a chat interface and options to share images and their location.
+          <ul> <u>Technologies:</u>
+            <li>React Native</li>
+            <li>Expo</li>
+            <li>Android Studio</li>
+            <li>Firebase</li>
+            <li>Google Firestore</li>
+            <li>Gifted Chat</li>
+            <li>Dialogflow</li>
+          </ul>
+        </p>
+        <a class="grid-items__link" href="https://github.com/elenaharan/chatMobileApp" target="_blank">View this project on GitHub</a> <br>
+      </div>     
 
-  </div>    
-</div>
+      <div class="project-grid__item">
+        <h5>Meet App</h5>
+        <div class="screenshot-container_pic1">
+          <img class="screenshot" src="../img/meetAppProjectPicture.png" alt="Meet app project image">
+        </div>
+        <p class="grid-item__p">This is a serverless, progressive web application (PWA) with React 
+          using test-driven development (TDD) technique. 
+          The application uses Google Calendar API to fetch upcoming events.
+          <ul> <u>Technologies:</u>
+            <li>React</li>
+            <li>TDD technique</li>
+            <li>Serverless functions (AWS lambda)</li>
+            <li>Lighthouse</li>
+            <li>Gherkin syntax</li>
+          </ul></p>
+        <a class="grid-items__link" href="https://elenaharan.github.io/meet/" target="_blank">View this project online</a> <br>
+        <a class="grid-items__link" href="https://github.com/elenaharan/meet" target="_blank">View this project on GitHub</a>
+      </div>
+
+      <div class="project-grid__item">
+        <h5>Pokédex</h5>
+        <div class="screenshot-container_pic1"><img class="screenshot" src="../img/pokedexProjectPicture.png" 
+          alt="Pokedex project image">
+        </div>        
+        <p class="grid-item__p">This is a small web application with HTML, 
+              CSS and JavaScript that loads data from an external API and enables the viewing of data points in detail.
+              It displays a list of Pokemon, and the user should be able to view more details about each Pokemon after clicking on a particular Pokemon character.
+              <ul> <u>Technologies:</u>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>External API</li>
+              </ul></p>
+        <a class="grid-items__link" href="https://elenaharan.github.io/Pokedex/" target="_blank">View this project online</a> <br>
+        <a class="grid-items__link" href="https://github.com/elenaharan/Pokedex" target="_blank">View this project on GitHub</a>
+      </div>
+
+    </div>    
+  </section>
+</main>
+
   
 <footer class="page-footer">
   <p class="page-footer__text">Find me on</p>
