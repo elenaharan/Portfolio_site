@@ -188,8 +188,6 @@ a:active {
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
 }
 
 button:hover,
@@ -529,6 +527,12 @@ form {
     .page-header__item:last-child {
       grid-column: auto / auto;
       grid-row: auto / auto;
+    }
+    .screenshot-container_1pic {
+      width: 100%;
+      display: -ms-grid;
+      display: grid;
+      margin: 0; 
     }
     
   }
