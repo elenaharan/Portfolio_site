@@ -204,8 +204,7 @@ button:focus,
   float: left;
   width: 250px;
   height: auto;
-  border-radius: 50%;
-  
+  border-radius: 50%;  
 }
 
 .page-footer {
@@ -522,6 +521,14 @@ form {
     }
     .main-content__article {
       padding: 5px;
+    }
+    .screenshot-container_2pics {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
+    .page-header__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
     }
     
   }
