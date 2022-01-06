@@ -60,6 +60,11 @@ p {
   margin-top: 30px;
 }
 
+.about-grid__item {
+  text-align: left;
+  justify-self: center;
+}
+
 .grid-item__p {
   padding-top: 5px; 
   font-size: 20px; 
@@ -97,7 +102,7 @@ p {
   margin: 0 auto;
   font-weight: 300;
   color: #223c50;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .main-content__article {
@@ -199,9 +204,8 @@ button:focus,
   float: left;
   width: 250px;
   height: auto;
-  border-radius: 50%;  
-  margin-left: -80px;
-  margin-top: 80px;
+  border-radius: 50%;
+  
 }
 
 .page-footer {
@@ -217,8 +221,8 @@ button:focus,
   -ms-flex-align: center;
   align-items: center;
   opacity: 0.9;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .page-footer__text {
@@ -226,7 +230,7 @@ button:focus,
 }
 
 .footer-contact {
-  margin-top: -10px;
+  margin-top: 0px;
 }
 
 * {
@@ -470,16 +474,58 @@ form {
 
 }
 
-@media all and (max-width: 500px) {
-  .screenshot-container_2pics {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+  
+  @media all and (max-width: 600px) {
+    .project-grid {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      padding: 0px;
+    }
+    p {
+      padding: 5px;
+      font-size: 20px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .project-grid__item {
+      padding: 2px;
+      margin: 10px;
+    }
+    .grid-item__p {
+      font-size: 18px;
+      text-align: left;
+    }
+    .navigation-list {
+      margin: 0px;
+      padding: 0px;
+    }
+    .navigation-list li {
+      font-size: 10px;
+      margin: 20px;
+      margin-top: 15px;
+    }
+    ul {
+      text-align: left;
+      font-size: 18px;
+    }
+    .grid-items__link {
+      font-size: 16px;
+    }
+    .main-content__title {
+      margin-top: 15px;
+    }
+    .page-footer__text {
+      font-size: 18px;
+    }
+    .page-footer {
+      margin-top: 20px;
+    }
+    .main-content__article {
+      padding: 5px;
+    }
+    
   }
-  .project-grid__item {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
+
 /* @media all and (min-width: 500px) and (max-width: 750px) {
   .project-grid {
     grid-template-columns: 1fr 1fr;
