@@ -469,3 +469,19 @@ form {
   }
 
 }
+
+@media all and (max-width: 500px) {
+  .screenshot-container_2pics {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .project-grid__item {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+/* @media all and (min-width: 500px) and (max-width: 750px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+} 
