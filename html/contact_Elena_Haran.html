@@ -5,7 +5,6 @@
   <title>Elena Haran - Portfolio Site</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="icon" type="image/png" href="../img/favicon_logo_EH.jpg" sizes="32x32"/>
   <link rel="stylesheet" type="text/css" 
   href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,43 +15,41 @@
 <body>
   <header class="page-header">
     <!--Navigation menu is here-->
-    <nav class="navbar page-header navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+    <nav class="navbar page-header navbar-expand-lg sticky-top" style="background-color: #e3f2fd; position: sticky;
+    z-index: 999; margin-top: 0;">
     <!--<nav class="main-navigation page-header__item">-->
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="../index.html" role="menuitem" class="navigation-list__item">About</a>
+          <a href="../index.html" role="menuitem" class="navigation-list__item" style="font-size: 22px;">About</a>
         </li>       
         <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
+          <a href="work.html" role="menuitem" class="navigation-list__item" style="font-size: 22px;">Projects</a>
         </li>
         <li role="presentation">
           <a href="contact_Elena_Haran.html" role="menuitem" class="navigation-list__item 
-          navigation-list__item--active">Contact</a>
+          navigation-list__item--active" style="font-size: 22px;">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
   <div class="main-content">
-    <h1>Contact</h1>
+    <h2>Contact</h2>
     <div>
-      <p>Ground floor flat<br>
-        55 Percy Road<br>
+        <p style="padding-top: 10px;">55 Percy Road<br>
         London, W12 9PX<br>
         United Kingdom<br>
-        <br>
         Tel. <a href="tel:(+44)07852661747">(+44)07852661747</a><br>
         Skype <a href="skype:live:elenaharan">live:elenaharan</a><br>
-        elenaharan@gmail.com<br>
-        <a href="mailto:elenaharan@gmail.com">Contact me</a>
-      </p>
+        <a href="mailto:elenaharan@gmail.com">elenaharan@gmail.com</a><br></p>                
+      
     <form action="post" method="post">
-    <label class="standard-label" for="contact-email">E-mail: </label>
-      <input type="email" id="contact-email" placeholder="Type your email here" required>
-    <label class="standard-label" for="contact-tel">Telephone: </label>
-      <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Type your phone here" required>
-    <label class="standard-label" for="contact-message">Message: </label>
-      <textarea id="contact-message" maxlength="240" placeholder="Type your message here" required></textarea>
-      <input type="submit" value="Send message">
+      <label class="standard-label" for="contact-email">E-mail: </label>
+        <input type="email" id="contact-email" placeholder="Type your email here" required>
+      <label class="standard-label" for="contact-tel">Telephone: </label>
+        <input type="tel" id="contact-tel" placeholder="Type your phone here" required>
+      <label class="standard-label" for="contact-message">Message: </label>
+        <textarea id="contact-message" maxlength="240" placeholder="Type your message here" required></textarea>
+        <button class="contact-button" type="submit" value="Send message">Send Message</button>
     </form>
     </div>
   </div>
@@ -60,11 +57,11 @@
     <p class="page-footer__text">Find me on</p>
     <div class="social-media__icons">
     <!--Github logo-->
-    <a href="https://github.com/elenaharan" target="_blank"><img src="../img/github_logo.svg" alt="github"></a>
+    <a href="https://github.com/elenaharan" target="_blank" class="footer-icons"><img src="../img/github_logo.svg" alt="github"></a>
     <!--linkedin logo-->
-    <a href="https://www.linkedin.com/in/elena-haran-923b25192/" target="_blank"><img src="../img/linkedin_logo.svg" alt="linkedin"></a>
+    <a href="https://www.linkedin.com/in/elena-haran-923b25192/" target="_blank" class="footer-icons"><img src="../img/linkedin_logo.svg" alt="linkedin"></a>
     <!--facebook logo-->
-    <a href="https://www.facebook.com/elena.freeman.9" target="_blank"><img src="../img/facebook_logo.svg" alt="facebook"></a>
+    <a href="https://www.facebook.com/elena.freeman.9" target="_blank" class="footer-icons"><img src="../img/facebook_logo.svg" alt="facebook"></a>
     </div>
   </footer>
   <script src="tota11y.min.js"></script>
