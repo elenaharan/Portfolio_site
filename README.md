@@ -1,6 +1,6 @@
 # Portfolio Website
 This is a responsive website built with HTML and CSS, which includes the projects built throughout Full-Stack Web Development Program. The user should be able to view the portfolio website and navigate between web pages on both mobile and desktop.
-
+![Project Screenshot](https://github.com/elenaharan/Portfolio_site/blob/gh-pages/img/portfolioSiteScreenshot.png)
 ## Key Features
 <ul>
 <li>A <b>homepage</b> with a short introduction and link to work examples</li>
