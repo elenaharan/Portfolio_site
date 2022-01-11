@@ -537,6 +537,10 @@ form {
     
   }
 
+  b {
+    font-weight: 700;
+  }
+
 /* @media all and (min-width: 500px) and (max-width: 750px) {
   .project-grid {
     grid-template-columns: 1fr 1fr;
