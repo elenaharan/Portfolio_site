@@ -67,7 +67,7 @@ p {
 
 .grid-item__p {
   padding-top: 5px; 
-  font-size: 20px; 
+  font-size: 16px; 
   font-weight: 100;
 }
 
@@ -181,7 +181,7 @@ a:active {
   background-color: #68829e;
   color: white;
   text-decoration: none;
-  padding: 8px;
+  padding: 10px;
   margin-top: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -196,6 +196,12 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.project-button {
+  background-color: white;
+  color: #68829e;
+  margin: 15px;
 }
 
 .profile__portrait {
@@ -348,7 +354,7 @@ ul {
 }
 
 li {
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -539,6 +545,10 @@ form {
 
   b {
     font-weight: 700;
+  }
+
+  u {
+    font-size: 16px;
   }
 
 /* @media all and (min-width: 500px) and (max-width: 750px) {
