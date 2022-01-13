@@ -50,6 +50,11 @@ h5 {
   font-size: 22px;
 }
 
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 p {
   display: flex;
   justify-content: center;
@@ -116,7 +121,7 @@ p {
 }
 
 a {
-  color: #2d4262;
+  color: #fff;
   font-size: 18px;
 }
 
@@ -178,7 +183,7 @@ a:active {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #68829e;
+  background-color: #336b87;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -224,8 +229,6 @@ button:focus,
   -ms-flex-align: center;
   align-items: center;
   opacity: 0.9;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .page-footer__text {
@@ -246,7 +249,6 @@ button:focus,
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 10px;
   justify-content: end;
 }
 
@@ -320,7 +322,7 @@ input {
 }
 
 .card-img-top {
-  width: 80%;
+  width: 40%;
   height: 40%;
   padding-top: 5px;
 }
@@ -339,7 +341,7 @@ input {
 .project-grid__item {
   padding: 40px;
   margin: 40px;
-  background-color: #68829e;
+  background-color: #336b87;
   color: #ffffff;
   border-radius: 5px;
   border: 1px solid;
@@ -349,8 +351,13 @@ ul {
   font-size: 20px;
   text-align: center;
   padding-bottom: 5px;
-  line-height: 200%;
+  line-height: 150%;
   padding-top: 20px;
+
+}
+
+.ul-technology {
+  columns: 2;
 }
 
 li {
@@ -474,7 +481,7 @@ form {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-
+  
 }
 
   
@@ -517,12 +524,11 @@ form {
     .main-content__title {
       margin-top: 15px;
     }
+
     .page-footer__text {
       font-size: 18px;
     }
-    .page-footer {
-      margin-top: 20px;
-    }
+    
     .main-content__article {
       padding: 5px;
     }
@@ -549,6 +555,18 @@ form {
 
   u {
     font-size: 16px;
+  }
+
+  span {
+    
+    font-weight: 900;
+    
+  }
+
+  .contactUs {
+    background: url("../img/contactMe.jpg") no-repeat center;
+    background-size: 100% 100%;
+    
   }
 
 /* @media all and (min-width: 500px) and (max-width: 750px) {
