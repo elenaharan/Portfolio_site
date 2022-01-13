@@ -50,6 +50,11 @@ h5 {
   font-size: 22px;
 }
 
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 p {
   display: flex;
   justify-content: center;
@@ -116,7 +121,7 @@ p {
 }
 
 a {
-  color: #2d4262;
+  color: #fff;
   font-size: 18px;
 }
 
@@ -178,7 +183,7 @@ a:active {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #68829e;
+  background-color: #336b87;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -320,7 +325,7 @@ input {
 }
 
 .card-img-top {
-  width: 80%;
+  width: 40%;
   height: 40%;
   padding-top: 5px;
 }
@@ -339,7 +344,7 @@ input {
 .project-grid__item {
   padding: 40px;
   margin: 40px;
-  background-color: #68829e;
+  background-color: #336b87;
   color: #ffffff;
   border-radius: 5px;
   border: 1px solid;
@@ -349,8 +354,13 @@ ul {
   font-size: 20px;
   text-align: center;
   padding-bottom: 5px;
-  line-height: 200%;
+  line-height: 150%;
   padding-top: 20px;
+
+}
+
+.ul-technology {
+  columns: 2;
 }
 
 li {
@@ -549,6 +559,12 @@ form {
 
   u {
     font-size: 16px;
+  }
+
+  span {
+    
+    font-weight: 900;
+    
   }
 
 /* @media all and (min-width: 500px) and (max-width: 750px) {
