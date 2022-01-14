@@ -481,7 +481,6 @@ form {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-  
 }
 
   
@@ -581,8 +580,17 @@ form {
     display: none;
   }
 
-
-  
+  .logo {
+    color: #fff;
+    background-color: #2A3132;
+    display: flex;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    align-items: flex-end;
+    font-size: 22px;       
+    font-size: 22px;
+    font-weight: 100;
+  }
   
 
 /* @media all and (min-width: 500px) and (max-width: 750px) {
