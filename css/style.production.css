@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   line-height: 200%;
   padding-top: 0px;
-  padding-bottom: 0px;
+  
 }
 
 .navigation-list li {
@@ -237,6 +237,7 @@ button:focus,
 
 .footer-contact {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 * {
@@ -335,7 +336,7 @@ input {
   grid-gap: 20px;
   text-align: center;
   margin: 0 auto;
-  padding: 40px 100px;  
+  padding: 20px 50px;  
 }
 
 .project-grid__item {
@@ -470,6 +471,19 @@ form {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
+  .navigation-list {
+    margin: 0px;
+    padding: 0px;
+  }
+  .navigation-list li {
+    font-size: 10px;
+    margin: 20px;
+    margin-top: 15px;
+  }
+  ul {
+    text-align: left;
+    font-size: 18px;
+  }
 }
 
 /*----shared code between the two----*/
@@ -481,6 +495,9 @@ form {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
+  
+  
 }
 
   
@@ -492,7 +509,7 @@ form {
     }
     p {
       padding: 5px;
-      font-size: 20px;
+      font-size: 16px;
       margin-top: 5px;
       margin-bottom: 10px;
     }
@@ -501,7 +518,7 @@ form {
       margin: 10px;
     }
     .grid-item__p {
-      font-size: 18px;
+      font-size: 16px;
       text-align: left;
     }
     .navigation-list {
@@ -509,28 +526,34 @@ form {
       padding: 0px;
     }
     .navigation-list li {
-      font-size: 10px;
-      margin: 20px;
-      margin-top: 15px;
+      font-size: 12px;
+      margin: 10px;
+      margin-top: 0px;
     }
     ul {
       text-align: left;
-      font-size: 18px;
+      font-size: 10px;
     }
     .grid-items__link {
       font-size: 16px;
     }
     .main-content__title {
       margin-top: 15px;
+      font-size: 16px;
     }
 
     .page-footer__text {
-      font-size: 18px;
+      font-size: 14px;
+    }
+    .CV-button {
+      font-size: 14px;
     }
     
     .main-content__article {
       padding: 5px;
+      font-size: 14px;
     }
+    
     .screenshot-container_2pics {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -545,7 +568,11 @@ form {
       display: grid;
       margin: 0; 
     }
-    
+    .page-header {
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+    }
   }
 
   b {
@@ -590,6 +617,12 @@ form {
     font-size: 22px;       
     font-size: 22px;
     font-weight: 100;
+  }
+
+  .text-about {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2A3132;
   }
   
 
