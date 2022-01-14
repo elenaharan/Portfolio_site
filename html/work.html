@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elena Haran - Portfolio Site</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -10,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/style.production.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <!--Header including the main navigation menu-->
@@ -35,13 +35,15 @@
 </header>
 
 <main>
+  <button id="back-to-top-btn">
+    <img src="https://img.icons8.com/ios/50/000000/up-squared.png"/>
+  </button>
   <section>
     <h2 class="main-content__title">My Projects</h2>
     <p>While working on these projects, I used Agile project management techniques including user stories, user flow, story points, 
       and a kanban board.
     </p>
     
-
     <div class="project-grid">  
       <!--grid items-->
       <div class="project-grid__item">
@@ -193,6 +195,10 @@
   <a href="https://medium.com/@elenaharan" target="_blank" class="footer-icons"><img src="https://img.icons8.com/material-outlined/30/000000/medium-logo.png"/></a>
   </div>
 </footer>
-<script src="tota11y.min.js"></script>
+
+<script type="text/javascript" src="../scripts.js"></script>
+
+
+
 </body>
 </html>

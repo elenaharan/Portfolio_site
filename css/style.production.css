@@ -569,6 +569,22 @@ form {
     
   }
 
+  #back-to-top-btn {
+    background-color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999; /*Make sure it doesn't overlap*/
+    cursor: pointer;
+    padding: 0px;
+    border: none;
+    display: none;
+  }
+
+
+  
+  
+
 /* @media all and (min-width: 500px) and (max-width: 750px) {
   .project-grid {
     grid-template-columns: 1fr 1fr;
