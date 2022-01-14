@@ -570,7 +570,7 @@ form {
   }
 
   #back-to-top-btn {
-    background-color: #fff;
+    background-color: transparent;
     position: fixed;
     bottom: 20px;
     right: 30px;
